@@ -1,9 +1,9 @@
 // Import necessary modules
 const database = require('database');
 
-// Define function for managing users
-function manageUsers() {
-    // Implementation for managing users
+// Define function for maintaining users
+function maintainUsers() {
+    // Implementation for maintaining users
 }
 
 // Define function for adding tests
@@ -43,7 +43,7 @@ function viewStatistics() {
 
 // Export functions for use in other modules
 module.exports = {
-    manageUsers,
+    maintainUsers,
     addTest,
     removeTest,
     updateTest,

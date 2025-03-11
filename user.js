@@ -1,5 +1,6 @@
 // Import necessary modules
 const stripe = require('stripe');
+const database = require('./database');
 
 // Define function for user registration
 function registerUser(name, email, password) {
@@ -21,23 +22,18 @@ function filterTestsByDate(date) {
     // Implementation for filtering tests by date
 }
 
-// Define function for making secure payments using Stripe
-function makePayment(amount, cardDetails) {
-    // Implementation for making secure payments using Stripe
-}
-
-// Define function for maintaining user profile
-function maintainProfile(userInfo) {
+// Function to maintain user profile
+function maintainProfile(userId, profileData) {
     // Implementation for maintaining user profile
 }
 
-// Define function for checking upcoming appointments
-function checkAppointments() {
+// Function to check upcoming appointments
+function checkAppointments(userId) {
     // Implementation for checking upcoming appointments
 }
 
-// Define function for viewing test results
-function viewTestResults() {
+// Function to view test results
+function viewTestResults(userId) {
     // Implementation for viewing test results
 }
 
@@ -47,7 +43,6 @@ module.exports = {
     loginUser,
     bookTest,
     filterTestsByDate,
-    makePayment,
     maintainProfile,
     checkAppointments,
     viewTestResults
